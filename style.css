@@ -20,6 +20,8 @@ body{
     overflow-x: hidden;
     background-color: #88c273;
     color: black;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 header{
@@ -66,6 +68,7 @@ nav a.active{
     border-bottom: 3px solid #536493;
 }
 
+/*Nav Header*/
 @media(max-width:995px){
     nav{
         position: absolute;
@@ -99,10 +102,11 @@ nav a.active{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 5rem 9% 5rem;
 }
 
+/*SECTION 1: Home*/
 .home{
     display: flex;
     justify-content: center;
@@ -125,6 +129,10 @@ span{
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+.home-content p{
+    font-size: 2rem;
 }
 
 .home-img{
@@ -150,8 +158,8 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background-color: transparent;
     border: 0.2rem solid #536493;
     font-size: 2rem;
@@ -225,6 +233,7 @@ span{
 .skills-section .text{
     text-align: center;
     margin-bottom: 35px;
+    font-size: 1.8rem;
 }
 
 .skills-section .cells{
@@ -237,10 +246,117 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
     width: 200px;
     padding: 10px 20px;
-    border: 1px solid;
+    margin: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img{
+    width: 50px;
+    height: 50px;
+}
+
+.skills-section .cells .cell span{
+    font-size: 2.5rem;
+    color: black;
+}
+
+/*SECTION 3: Education*/
+.education-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.education-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.education-section .text{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.8rem;
+}
+
+/*SECTION 4: Experience*/
+.experience-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.experience-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.experience-section .text{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.8rem;
+}
+
+/*SECTION 5: Contact*/
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    text-align: left;
+    font-size: 35px;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    text-align: left;
+    margin-bottom: 35px;
+    font-size: 1.8rem;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #5ea145;
+    background-color: #fff1db;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    background-color: #fff1db;
+}
+
+.contact-section .group form button:hover{
+    background-color: #536493;
+    transition: .2s ease;
+}
+
+@media(max-width:740px){
+    .contact-section .group{
+        flex-direction: column;
+    }
 }
 
 @media(max-width:995px){
